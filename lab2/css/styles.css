@@ -184,7 +184,6 @@ p {
   display: flex;
   justify-content: space-between;
   column-gap: 1rem;
-  min-height: 60vh;
   margin: 14rem 0 3rem;
 }
 
@@ -550,8 +549,8 @@ p {
 
 /* Медиа запросы для адаптива */
 
-@media screen and (max-width: 1024px) {
-  .header {
-    flex-direction: column;
-  } 
+@media screen and (max-width: 2560px) {
+  .what_is_chatgpt_section {
+    margin: 0 0;
+  }
 }
