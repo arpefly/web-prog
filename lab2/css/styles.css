@@ -1014,14 +1014,19 @@ p {
     width: 10em;
   }
 
+  
+  /* footer */
   .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-    gap: 3rem;
-    justify-items: center; /* если нужно центрировать содержимое */
+    flex-direction: column;
+    gap: 2rem;
   }
+
+
   .footer_list{
     text-align: center;
+  }
+  .logo, .footer_list {
+    text-align: center;
+    align-items: center;
   }
 }
