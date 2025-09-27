@@ -14,6 +14,11 @@
   src: url(../fonts/Manrope-Light.ttf);
 }
 
+@font-face {
+  font-family: "ManropeMedium";
+  src: url(../fonts/Manrope-Medium.ttf);
+}
+
 /* Сброс базовых стилей */
 
 * {
@@ -609,7 +614,7 @@ p {
   margin-bottom: 7rem;
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
   align-items: stretch;
 }
 
@@ -934,6 +939,15 @@ p {
     gap: 3em;
   }
 
+}
+
+/* На маленьком экране не помещается крестик закрытия бургера */
+@media screen and (max-width: 600px) {
+  .header .header__menu .menu__close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
 }
 
 @media screen and (max-width: 425px) {
