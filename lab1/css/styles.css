@@ -442,7 +442,7 @@ p {
   margin-top: 7rem;
   margin-bottom: 7rem;
   display: grid;
-  grid-template-columns: 1.5 1 1;
+  grid-template-columns: 1.5fr 1fr 1fr;
   gap: 3rem;
   align-items: stretch;
 }
