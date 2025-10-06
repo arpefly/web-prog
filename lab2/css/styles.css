@@ -954,51 +954,41 @@ p {
   a {
     font-size: 12px;
   }
-
   p {
     font-size: 12px;
   }
-
   h1 {
     font-size: 25px;
   }
-
   h2 {
     font-size: 19px;
   }
-
   .hero_section .hero_section__left .left__cta_buttons input[type="text"] {
     min-width: auto;
   }
-
   .future_here {
     row-gap: 3rem;
   }
-
   .future_here .future_here__right .right__container {
     flex-direction: column;
   }
-
   .future_here .future_here__right .right__container .container__header {
     width: 100%;
   }
-
   .future_here .future_here__right .right__container .container__content {
     width: 100%;
   }
-
   .future_here .future_here__right {
     row-gap: 2rem;
   }
-  /* Woman */
-  
+
+  /* Woman */  
   .woman_left img{
     height: 20em;
     width: auto;
   }
 
-  /* blogs */
-  
+  /* blogs */  
   .blogs {
     grid-template-columns: 1fr;
   }
@@ -1027,15 +1017,13 @@ p {
   .cta_buttons_start {
     width: 10em;
   }
-
+  
   
   /* footer */
   .footer {
     flex-direction: column;
     gap: 2rem;
   }
-
-
   .footer_list{
     text-align: center;
   }
