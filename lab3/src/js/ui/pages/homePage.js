@@ -6,6 +6,9 @@ import initFutureHere from "./../components/initFutureHere.js";
 import initBurger from "./../components/initBurger.js";
 import initWoman from "./../components/initWoman.js"
 import initRegister from "./../components/initRegister.js"
+import initBlog from "../components/initBlog.js";
+import initFuture from "../components/initFuture.js";
+import initRights from "../components/initRights.js";
 
 const createHomePageTemplate = (rootNode) => {
   // формируем шаблон базовых секций для дальнейшего монтирования в них
@@ -18,6 +21,9 @@ const createHomePageTemplate = (rootNode) => {
     <section class="section future_here"></section>
     <section class="section woman"></section>
     <section class="section register-n-start"></section>
+    <section class="section blog"></section>
+    <section class="section future"></section>
+    <section class="rights"></section>
   `;
 
   rootNode.insertAdjacentHTML("beforeend", template); 
@@ -55,6 +61,18 @@ const homePage = () => {
   // инициализация раздела register-n-start
   const registerNode = rootNode.querySelector(".register-n-start");
   initRegister(registerNode);
+
+  // инициализация раздела blog
+  const blogNode = rootNode.querySelector(".blog");
+  initBlog(blogNode);
+
+  // инициализация раздела future
+  const futureNode = rootNode.querySelector(".future");
+  initFuture(futureNode);
+
+  // инициализация раздела rights
+  const rightsNode = rootNode.querySelector(".rights");
+  initRights(rightsNode);
 
   // инициализация бургера для адаптивного меню
   initBurger(headerNode);
