@@ -524,7 +524,7 @@ p {
   grid-column: 1 / 2;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .big_blog img {
@@ -1017,6 +1017,7 @@ p {
   .container__register__left {
     padding: 0em;
     width: 100%;
+    text-align: center;
   }
   .container__register__left > h3, 
   .container__register__left > p{

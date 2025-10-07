@@ -1,4 +1,6 @@
-export const title = "Многое Происходит,<br>Мы Ведем об Этом Блог."
+export const title = "Многое Происходит, <br>Мы Ведем об Этом Блог."
+
+
 
 export const blogs = [
     {
@@ -72,6 +74,8 @@ export const blogs = [
         }
     },
 ];
+
+
 
 export const blogData = {
     title,
