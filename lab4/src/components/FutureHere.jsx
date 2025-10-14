@@ -1,5 +1,6 @@
 import futureHereData from "../mockData/futureHereData";
 
+
 export const RightContainer = ({ item }) => {
   const { title, description } = item;
 

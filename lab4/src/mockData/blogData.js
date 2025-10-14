@@ -10,8 +10,6 @@ export const title = ["Многое Происходит,",
                         <br/>,
                         "Мы Ведем об Этом Блог."]
 
-
-
 export const blogs = [
     {
         image: {
@@ -84,8 +82,6 @@ export const blogs = [
         }
     },
 ];
-
-
 
 export const blogData = {
     title,

@@ -17,9 +17,6 @@ const createBlogPost = ({ image, blogInfo }) => {
     );
 };
 
-
-
-
 const Blog = () => {
     const { title, blogs } = blogData;
     const headerTemplate = createHeaderTemplate(title);

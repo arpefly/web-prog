@@ -33,7 +33,6 @@ const createFooterList = ({ title, links }) => {
     
 };
 
-
 const Footer = () => {
     const { title, buttonText, footerLogo, footerLinks} = footerData;
 
@@ -50,7 +49,7 @@ const Footer = () => {
                 {footerIllustration}
             </div>
             
-            {footerLinks.slice(1).map((list, index) => (
+            {footerLinks.map((list, index) => (
                 <div key={index}>
                     {createFooterList(list)}
                 </div>
@@ -60,4 +59,5 @@ const Footer = () => {
     
     </>);
 };
+
 export default Footer;

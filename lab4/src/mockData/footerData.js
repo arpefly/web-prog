@@ -1,4 +1,3 @@
-
 import logo from "../assets/img/logo.svg";
 
 const title = "Хотите Шагнуть в Будущее Раньше Других?";
@@ -64,8 +63,7 @@ const footerLinks = [
                 text: [
                     "ул. Профессора",
                     <br />,
-                    "Поздеева, 13, к.Г, Пермь"
-]
+                    "Поздеева, 13, к.Г, Пермь"]
             },
             {
                 href: "#",
@@ -87,10 +85,3 @@ export const footerData = {
 }
 
 export default footerData;
-                
-                
-                
-                
-                 
-                
-                

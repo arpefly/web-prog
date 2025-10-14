@@ -7,7 +7,7 @@ import Woman from "../components/Woman";
 import Register from "../components/Register";
 import Blog from "../components/Blog"
 import Footer from "../components/Footer"
-import Right from "../components/Rights"
+import Rights from "../components/Rights";
 
 const Home = () => {
   return (
@@ -39,10 +39,9 @@ const Home = () => {
       <section className="section footer_">
         <Footer />
       </section>
-      <section className="right">
-        <Right />
+      <section className="rights">
+        <Rights />
       </section>
-
     </>
   );
 };

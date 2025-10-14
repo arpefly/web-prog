@@ -1,5 +1,6 @@
 import { heroData } from "../mockData/heroData";
 
+
 export const Header = ({ header }) => (
   <h1 className="left__header">{header}</h1>
 );
