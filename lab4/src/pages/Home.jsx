@@ -8,6 +8,7 @@ import Register from "../components/Register";
 import Blog from "../components/Blog"
 import Footer from "../components/Footer"
 import Right from "../components/Rights"
+
 const Home = () => {
   return (
     <>
@@ -32,10 +33,10 @@ const Home = () => {
       <section className="register-n-start">
         <Register />
       </section>
-      <section className="blog">
+      <section className="section blog">
         <Blog />
       </section>
-      <section className="footer_">
+      <section className="section footer_">
         <Footer />
       </section>
       <section className="right">

@@ -49,9 +49,9 @@ export const Burger = ({ isBurgerActive, setIsMenuShown }) => (
   </div>
 );
 
-export const MenuItem = ({ menuItemData: { title, href } }) => {
+export const MenuItem = ({ menuItemData: { title, href, isActive } }) => {
   return (
-    <li className="menu__item">
+    <li className={`menu__item ${isActive ? "active": ""}`}>
       <a href={href} className="item__link">
         {title}
       </a>

@@ -796,7 +796,7 @@ p {
     align-items: center;
   }
   .woman_left img{
-    height: 40em;
+    height: 20em;
     width: auto;
   }
   .woman_right{
@@ -805,12 +805,15 @@ p {
 
   /* blogs */
 
-  .blogs{
-    margin: 2em 0em;
-    gap: 1em;
+  .blogs {
+    grid-template-columns: 1fr;
   }
-  .container_blog_small{
-    gap: 1em
+  .big_blog,
+  .container_blog_small {
+    grid-column: 1 / -1;
+  }
+  .container_blog_small {
+    grid-template-columns: 1fr;
   }
 
 
