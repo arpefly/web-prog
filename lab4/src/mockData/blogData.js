@@ -6,9 +6,7 @@ import img25 from "../assets/img/blog/Rectangle 25.png";
 import img26 from "../assets/img/blog/Rectangle 26.png";
 
 
-export const title = ["Многое Происходит,",
-                        <br/>,
-                        "Мы Ведем об Этом Блог."]
+export const title = ["Многое Происходит,\nМы Ведем об Этом Блог."]
 
 export const blogs = [
     {

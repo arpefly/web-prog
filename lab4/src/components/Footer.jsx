@@ -12,7 +12,7 @@ const createFutureHeader = (title, buttonText) => {
 const createFooterIllustration = ({ image, address, comment }) => {
     return (<>
         <img src={image.src} alt={image.alt}></img>
-        <p className="footer_text p_small">{address}</p>
+        <p className="footer_text p_small" style={{ whiteSpace: 'pre-line' }}>{address}</p>
         <p className="footer_text p_small">{comment}</p>
     </>);
 };

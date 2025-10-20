@@ -1,7 +1,7 @@
 import { blogData } from "../mockData/blogData";
 
 
-const createHeaderTemplate = (title) => {return <h1>{title}</h1>};
+const createHeaderTemplate = (title) => {return <h1 style={{ whiteSpace: 'pre-line' }}>{title}</h1>};
 
 const createBlogPost = ({ image, blogInfo }) => {
     
