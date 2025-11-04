@@ -11,7 +11,7 @@ export const menuData = [
   },
   {
     type: "button",
-    title: "Open AI",
+    title: "Open AI af",
     href: "#",
   },
   {

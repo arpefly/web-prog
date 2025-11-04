@@ -6,7 +6,7 @@ export const title = ["Многое Происходит,\nМы Ведем об 
 export const blogs = [
     {
         image: {
-            src: "./assets/img/blog/Rectangle 22.png",
+            src: "/assets/img/blog/Rectangle 22.png",
             alt: "blog post 1"
         },
         blogInfo: {
@@ -14,13 +14,13 @@ export const blogs = [
             title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
             link: {
                 text: "Читать полную статью",
-                href: "#"
+                href: "/library"
             }
         }
     },
     {
         image: {
-            src: "./assets/img/blog/Rectangle 23.png",
+            src: "/assets/img/blog/Rectangle 23.png",
             alt: "blog post 2"
         },
         blogInfo: {
@@ -28,13 +28,13 @@ export const blogs = [
             title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
             link: {
                 text: "Читать полную статью",
-                href: "#"
+                href: "/library"
             }
         }
     },
     {
         image: {
-            src: "./assets/img/blog/Rectangle 24.png",
+            src: "/assets/img/blog/Rectangle 24.png",
             alt: "blog post 3"
         },
         blogInfo: {
@@ -42,13 +42,13 @@ export const blogs = [
             title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
             link: {
                 text: "Читать полную статью",
-                href: "#"
+                href: "/library"
             }
         }
     },
     {
         image: {
-            src: "./assets/img/blog/Rectangle 25.png",
+            src: "/assets/img/blog/Rectangle 25.png",
             alt: "blog post 4"
         },
         blogInfo: {
@@ -56,13 +56,13 @@ export const blogs = [
             title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
             link: {
                 text: "Читать полную статью",
-                href: "#"
+                href: "/library"
             }
         }
     },
     {
         image: {
-            src: "./assets/img/blog/Rectangle 26.png",
+            src: "/assets/img/blog/Rectangle 26.png",
             alt: "blog post 5"
         },
         blogInfo: {
@@ -70,7 +70,7 @@ export const blogs = [
             title: "GPT-3 и Openai – это будущее. Давайте разберемся, как это?",
             link: {
                 text: "Читать полную статью",
-                href: "#"
+                href: "/library"
             }
         }
     },

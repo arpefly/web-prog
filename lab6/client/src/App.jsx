@@ -25,6 +25,10 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
+    path: "login/home",
+    element: <Home isEditable={true} />,
+  },
+  {
     path: "admin",
     element: <AdminLogin />,
   },

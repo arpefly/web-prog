@@ -1,7 +1,7 @@
 {
   "logoData": {
     "alt": "logo1",
-    "src": "./assets/img/logo.svg",
+    "src": "/assets/img/logo.svg",
     "href": "#"
   },
   "menuData": [
@@ -9,11 +9,10 @@
     { "type": "button", "title": "Что такое GPT?", "href": "#what-is" },
     { "type": "button", "title": "Open AI", "href": "#future" },
     { "type": "link", "title": "Кейсы", "href": "/cases" },
-    { "type": "link", "title": "Библиотека", "href": "/library" },
-    { "type": "link", "title": "Admin", "href": "/admin" }
+    { "type": "link", "title": "Библиотека", "href": "/library" }
   ],
   "buttonsData": [
-    { "title": "Authorize", "href": "#", "isPrimary": false },
-    { "title": "Registration", "href": "#", "isPrimary": true }
+    { "title": "Войти", "href": "/login", "isPrimary": false },
+    { "title": "Регистрация", "href": "/login", "isPrimary": true }
   ]
 }

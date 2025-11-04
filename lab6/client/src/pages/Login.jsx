@@ -9,7 +9,7 @@ const Login = () => {
   const handleSubmit = async () => {
     // fetch data
 
-    navigate("/login/hello");
+    navigate("home");
   };
 
   return (

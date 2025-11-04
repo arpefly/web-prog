@@ -5,7 +5,7 @@ const buttonText = "Запросить ранний доступ";
 
 const footerLogo = {
     image: {
-        src: "./assets/img/logo.svg",
+        src: "/assets/img/logo.svg",
         alt: "gpt4"
     },
     address: ["ул. Профессора Поздеева, 13, к.Г,\nПермь, Пермский край, 614013"],
