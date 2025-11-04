@@ -15,7 +15,7 @@ const {
   postHeroData,
 } = require("../controllers/heroDataController");
 
-router.route("/hero ").get(getHeroData).post(postHeroData);
+router.route("/hero").get(getHeroData).post(postHeroData);
 
 // Brands роутер
 const {
