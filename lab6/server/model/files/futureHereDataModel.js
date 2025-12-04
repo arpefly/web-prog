@@ -18,7 +18,7 @@ const getFutureHereDataModel = () => {
     return JSON.parse(file);
   } catch (error) {
     console.log(error);
-    throw new Error("Не получилось прочитать данные и файла");
+    throw new Error("Не получилось прочитать данные из файла");
   }
 };
 

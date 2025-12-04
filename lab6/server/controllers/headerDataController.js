@@ -1,4 +1,4 @@
-const isHeaderDataValid = require("../validators/isHeaderDataValid");
+/const isHeaderDataValid = require("../validators/isHeaderDataValid");
 
 const {
   getHeaderDataModel,
