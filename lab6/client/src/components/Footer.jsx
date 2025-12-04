@@ -1,10 +1,17 @@
 import { footerData } from "../mockData/footerData";
+import useData from "../hooks/useData";
+import Preloader from "./Preloader";
 
 
 const createFutureHeader = (title, buttonText) => {
     return (
         <><h1>{title}</h1>
-        <button className="btn cta_buttons_get_access">{buttonText}</button>
+        <button 
+            className="btn cta_buttons_get_access"
+            onClick={() => window.location.href = "/login"}
+        >
+            {buttonText}
+        </button>
         </>  
     );
 }
@@ -34,7 +41,21 @@ const createFooterList = ({ title, links }) => {
 };
 
 const Footer = () => {
-    const { title, buttonText, footerLogo, footerLinks} = footerData;
+    const { isLoading, isError, error, data } = useData({
+        endpoint: "footer",
+        options: {
+            method: "GET",
+        },
+    });
+
+    if (isLoading) return <Preloader />;
+    
+    const renderedData = data || footerData;
+    const { title, buttonText, footerLogo, footerLinks} = renderedData;
+
+    if (isError) {
+        console.error("Ошибка загрузки данных footer:", error);
+    }
 
     const futureHeader = createFutureHeader(title, buttonText);
     const footerIllustration = createFooterIllustration(footerLogo);

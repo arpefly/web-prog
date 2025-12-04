@@ -22,19 +22,13 @@ const FutureHere = () => {
     },
   });
 
-  if (isError) {
-    console.log("error");
-    console.log(error);
-  }
-
-  // if (!isLoading) {
-  //   console.log("!isLoading");
-  //   console.log("data");
-  //   console.log(data);
-  // }
-
   if (isLoading) return <Preloader />;
+  
   const renderedData = data || futureHereData;
+
+  if (isError) {
+    console.error("Ошибка загрузки данных future-here:", error);
+  }
 
   return (
     <>

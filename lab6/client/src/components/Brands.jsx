@@ -18,19 +18,13 @@ const Brands = () => {
     },
   });
 
-  if (isError) {
-    console.log("error");
-    console.log(error);
-  }
-
-  // if (!isLoading) {
-  //   console.log("!isLoading");
-  //   console.log("data");
-  //   console.log(data);
-  // }
-
   if (isLoading) return <Preloader />;
+  
   const renderedData = data || brandsData;
+
+  if (isError) {
+    console.error("Ошибка загрузки данных brands:", error);
+  }
 
   return <BrandsTemplate brandsData={renderedData} />;
 };

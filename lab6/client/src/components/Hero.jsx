@@ -18,7 +18,12 @@ export const Button = ({ ctaButton: { type, title } }) => {
 
     case "button":
       return (
-        <button className="cta_buttons__signin btn primary-btn">{title}</button>
+        <button 
+          className="cta_buttons__signin btn primary-btn"
+          onClick={() => window.location.href = "/login"}
+        >
+          {title}
+        </button>
       );
 
     default:
@@ -50,20 +55,14 @@ const Hero = () => {
     },
   });
 
-  if (isError) {
-    console.log("error");
-    console.log(error);
-  }
-
-  // if (!isLoading) {
-  //   console.log("!isLoading");
-  //   console.log("data");
-  //   console.log(data);
-  // }
-
   if (isLoading) return <Preloader />;
+  
   const renderedData = data || heroData;
   const { header, description, illustration, heroCtaButtons } = renderedData;
+
+  if (isError) {
+    console.error("Ошибка загрузки данных hero:", error);
+  }
 
   return (
     <>

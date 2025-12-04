@@ -2,10 +2,10 @@
   "logoData": {
     "alt": "logo1",
     "src": "/assets/img/logo.svg",
-    "href": "#"
+    "href": "/login"
   },
   "menuData": [
-    { "type": "button", "title": "Главная", "href": "#hero" },
+    { "type": "link", "title": "Главная", "href": "/" },
     { "type": "button", "title": "Что такое GPT?", "href": "#what-is" },
     { "type": "button", "title": "Open AI", "href": "#future" },
     { "type": "link", "title": "Кейсы", "href": "/cases" },

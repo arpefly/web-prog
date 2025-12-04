@@ -7,7 +7,7 @@ const whatIsGptTopData = {
 const whatIsGptMiddleData = {
   header: "Что такое GPT-4",
   button: {
-    href: "#",
+    href: "/login",
     title: "Исследовать библиотеку",
   },
 };

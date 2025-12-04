@@ -17,19 +17,19 @@ const footerLinks = [
         title: "Ссылки",
         links: [
             {
-                href: "#",
+                href: "/login",
                 text: "Овероны"
             },
             {
-                href: "#",
+                href: "/login",
                 text: "Соц. сети"
             },
             {
-                href: "#",
+                href: "/login",
                 text: "Счетчики"
             },
             {
-                href: "#",
+                href: "/login",
                 text: "Контакты"
             },
             
@@ -39,15 +39,15 @@ const footerLinks = [
         title: "Компания",
         links: [
             {
-                href: "#",
+                href: "/login",
                 text: "Условия использования"
             },
             {
-                href: "#",
+                href: "/login",
                 text: "Перс. данные"
             },
             {
-                href: "#",
+                href: "/login",
                 text: "Конаткты"
             },            
         ]
@@ -56,18 +56,18 @@ const footerLinks = [
         title: "Контакты",
         links: [
             {
-                href: "#",
+                href: "/login",
                 text: [
                     "ул. Профессора",
                     <br />,
                     "Поздеева, 13, к.Г, Пермь"]
             },
             {
-                href: "#",
+                href: "/login",
                 text: "+7 (342) 2-198-520"
             },
             {
-                href: "#",
+                href: "/login",
                 text: "info@pstu.ru"
             },            
         ]

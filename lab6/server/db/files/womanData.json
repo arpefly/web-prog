@@ -1,4 +1,4 @@
-{"illustration":{"src":"./assets/img/Woman.png",
+{"illustration":{"src":"/assets/img/Woman.png",
 "alt":"woman"},
 "womanText":{"link":{"text":"Запросить ранний доступ","href":"/login"},
 "title":"Превосходя все ожидания",

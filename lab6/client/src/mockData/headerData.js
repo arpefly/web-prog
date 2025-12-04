@@ -2,39 +2,39 @@ export const menuData = [
   {
     type: "link",
     title: "Главная",
-    href: "#",
+    href: "/",
   },
   {
     type: "button",
     title: "Что такое GPT?",
-    href: "#",
+    href: "/login",
   },
   {
     type: "button",
     title: "Open AI af",
-    href: "#",
+    href: "/login",
   },
   {
     type: "link",
     title: "Кейсы",
-    href: "#",
+    href: "/login",
   },
   {
     type: "link",
     title: "Библиотека",
-    href: "#",
+    href: "/library",
   },
 ];
 
 export const buttonsData = [
   {
     title: "Войти",
-    href: "#",
+    href: "/login",
     isPrimary: false,
   },
   {
     title: "Регистрация",
-    href: "#",
+    href: "/login",
     isPrimary: true,
   },
 ];
@@ -42,7 +42,7 @@ export const buttonsData = [
 export const logoData = {
   alt: "logo",
   src: "./assets/img/logo.svg",
-  href: "#",
+  href: "/login",
 };
 
 const headerData = {

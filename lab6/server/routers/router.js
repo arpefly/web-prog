@@ -41,4 +41,44 @@ const {
 
 router.route("/what-is-gpt").get(getWhatIsGptData).post(postWhatIsGptData);
 
+// Woman роутер
+const {
+  getWomanData,
+  postWomanData,
+} = require("../controllers/womanDataController");
+
+router.route("/woman").get(getWomanData).post(postWomanData);
+
+// Blog роутер
+const {
+  getBlogData,
+  postBlogData,
+} = require("../controllers/blogDataController");
+
+router.route("/blog").get(getBlogData).post(postBlogData);
+
+// Footer роутер
+const {
+  getFooterData,
+  postFooterData,
+} = require("../controllers/footerDataController");
+
+router.route("/footer").get(getFooterData).post(postFooterData);
+
+// Register роутер
+const {
+  getRegisterData,
+  postRegisterData,
+} = require("../controllers/registerDataController");
+
+router.route("/register").get(getRegisterData).post(postRegisterData);
+
+// Rights роутер
+const {
+  getRightsData,
+  postRightsData,
+} = require("../controllers/rightsDataController");
+
+router.route("/rights").get(getRightsData).post(postRightsData);
+
 module.exports = router;

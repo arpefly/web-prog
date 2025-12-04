@@ -34,15 +34,23 @@ export const Burger = ({ isBurgerActive, setIsMenuShown }) => (
 
 export const MenuItem = ({ menuItemData: { type, title, href } }) => {
   const handleClick = () => {
-    if (href === "#") return;
-
-    const toNode = document.querySelector(`${href}`);
-
-    try {
-      toNode.scrollIntoView({ behavior: "smooth" });
-    } catch (error) {
-      console.log(error);
+    if (href === "#" || href === "/login") {
+      window.location.href = "/login";
+      return;
     }
+
+    // Если это якорная ссылка (начинается с #)
+    if (href.startsWith("#")) {
+      const toNode = document.querySelector(`${href}`);
+      try {
+        toNode.scrollIntoView({ behavior: "smooth" });
+      } catch (error) {
+        console.log(error);
+      }
+      return;
+    }
+
+    window.location.href = href;
   };
 
   if (type === "button")
@@ -57,7 +65,7 @@ export const MenuItem = ({ menuItemData: { type, title, href } }) => {
   if (type === "link")
     return (
       <li className="menu__item">
-        <Link to={href} className="item__link">
+        <Link to={href === "#" ? "/login" : href} className="item__link">
           {title}
         </Link>
       </li>
@@ -65,8 +73,9 @@ export const MenuItem = ({ menuItemData: { type, title, href } }) => {
 };
 
 export const Button = ({ buttonData: { title, href, isPrimary } }) => {
+  const finalHref = href === "#" ? "/login" : href;
   return (
-    <a href={href}>
+    <a href={finalHref}>
       <button
         className={`cta_buttons__signin btn${isPrimary ? " primary-btn" : ""}`}
       >
@@ -124,20 +133,14 @@ const Header = () => {
     },
   });
 
-  if (isError) {
-    console.log("error");
-    console.log(error);
-  }
-
-  // if (!isLoading) {
-  //   console.log("!isLoading");
-  //   console.log("data");
-  //   console.log(data);
-  // }
-
   if (isLoading) return <Preloader />;
+  
   const renderedData = data || headerData;
   const { logoData, menuData, buttonsData } = renderedData;
+
+  if (isError) {
+    console.error("Ошибка загрузки данных header:", error);
+  }
 
   return (
     <>

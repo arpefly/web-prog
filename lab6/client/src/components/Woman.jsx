@@ -1,4 +1,6 @@
 import womanData from "../mockData/womanData";
+import useData from "../hooks/useData";
+import Preloader from "./Preloader";
 
 const Illustration = ({ src, alt }) => {
   return <img src={src} alt={alt} />;
@@ -33,9 +35,24 @@ const WomanTemplate = ({ illustration, womanText }) => {
 };
 
 const Woman = () => {
+  const { isLoading, isError, error, data } = useData({
+    endpoint: "woman",
+    options: {
+      method: "GET",
+    },
+  });
+
+  if (isLoading) return <Preloader />;
+  
+  const renderedData = data || womanData;
+
+  if (isError) {
+    console.error("Ошибка загрузки данных woman:", error);
+  }
+
   return (
     <section className="woman">
-      <WomanTemplate {...womanData} />
+      <WomanTemplate {...renderedData} />
     </section>
   );
 };

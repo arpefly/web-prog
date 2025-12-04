@@ -3,7 +3,7 @@
   "buttonText": "Запросить ранний доступ",
   "footerLogo": {
     "image": {
-      "src": "./assets/img/logo.svg",
+      "src": "/assets/img/logo.svg",
       "alt": "gpt4"
     },
     "address": "ул. Профессора Поздеева, 13, к.Г,\nПермь, Пермский край, 614013",
@@ -13,26 +13,26 @@
     {
       "title": "Ссылки",
       "links": [
-        { "href": "#", "text": "Овероны" },
-        { "href": "#", "text": "Соц. сети" },
-        { "href": "#", "text": "Счетчики" },
-        { "href": "#", "text": "Контакты" }
+        { "href": "/login", "text": "Овероны" },
+        { "href": "/login", "text": "Соц. сети" },
+        { "href": "/login", "text": "Счетчики" },
+        { "href": "/login", "text": "Контакты" }
       ]
     },
     {
       "title": "Компания",
       "links": [
-        { "href": "#", "text": "Условия использования" },
-        { "href": "#", "text": "Перс. данные" },
-        { "href": "#", "text": "Конаткты" }
+        { "href": "/login", "text": "Условия использования" },
+        { "href": "/login", "text": "Перс. данные" },
+        { "href": "/login", "text": "Конаткты" }
       ]
     },
     {
       "title": "Контакты",
       "links": [
-        { "href": "#", "text": "ул. Профессора\nПоздеева, 13, к.Г, Пермь" },
-        { "href": "#", "text": "+7 (342) 2-198-520" },
-        { "href": "#", "text": "info@pstu.ru" }
+        { "href": "/login", "text": "ул. Профессора\nПоздеева, 13, к.Г, Пермь" },
+        { "href": "/login", "text": "+7 (342) 2-198-520" },
+        { "href": "/login", "text": "info@pstu.ru" }
       ]
     }
   ]
